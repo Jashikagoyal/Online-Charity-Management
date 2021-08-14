@@ -1,0 +1,48 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}
+  Contact Us
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+  <div class="jumbotron">
+
+      <div >
+                <h2>Our Address</h2>
+            <address>
+              <h4>
+                121, Clear Water Bay Road<br>
+                Clear Water Bay, Kowloon<br>
+                HONG KONG<br>
+              </h4>
+              <br>
+            <h3> <i class="fa fa-phone fa-lg"></i> : +852 1234 5678<br></h3>
+            <h3>  <i class="fa fa-fax fa-lg"></i> : +852 8765 4321<br></h3>
+            <h3> <i class="fa fa-envelope fa-lg"></i> : <a href="mailto:confusion@food.net">charity@gmail.com</a></h3>
+           </address>
+            </div>
+            <div>
+                <div class="text-center">
+                  <h1>
+                    <a class="btn btn-social-icon btn-google btn-lg" href="http://google.com/+"> <i class="fa fa-google-plus fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-facebooke btn-lg" href="http://www.facebook.com/profile.php?id="> <i class="fa fa-facebook fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin btn-lg" href="http://www.linkedin.com/in/">  <i class="fa fa-linkedin fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-twitter btn-lg" href="http://twitter.com/">  <i class="fa fa-twitter fa-lg"></i></a>
+                    <a class="btn btn-social-icon btn-youtube btn-lg" href="http://youtube.com/"> <i class="fa fa-youtube fa-lg"></i></a>
+                    <a class="btn btn-social-icon" href="mailto: btn-lg"> <i class="fa fa-envelope-o fa-lg"></i></a>
+                  </h1>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+    {% block carousel %}
+    {% endblock %}
+
+    {% block button %}
+    {% endblock %}
+
+{% endblock %}

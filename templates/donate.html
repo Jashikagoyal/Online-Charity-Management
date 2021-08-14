@@ -1,0 +1,52 @@
+{% extends 'index.html' %}
+{% block title %}
+  Donate
+{% endblock %}
+
+
+{% block body %}
+
+<div class="container">
+
+
+<div id="paypal-button-container"></div>
+
+<!-- Include the PayPal JavaScript SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=AcX-6boZKWt8jNRWh3HKuc4xfiOzq7dJLv9UFX6IfHlfeV0GJ58fhFa6zsIzaWSpPc1Dl9Fj_zk-NjgY&currency=USD"></script>
+
+<script>
+  // Render the PayPal button into #paypal-button-container
+  paypal.Buttons({
+
+      // Set up the transaction
+      createOrder: function(data, actions) {
+          return actions.order.create({
+              purchase_units: [{
+                  amount: {
+                      value: '500'
+                  }
+              }]
+          });
+      },
+
+      // Finalize the transaction
+      onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+              // Show a success message to the buyer
+              alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+      }
+
+
+  }).render('#paypal-button-container');
+</script>
+</div>
+{% block button %}
+
+{% endblock %}
+
+{% block carousel %}
+{% endblock %}
+
+
+{% endblock %}

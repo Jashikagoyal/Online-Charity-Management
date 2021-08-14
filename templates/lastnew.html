@@ -1,0 +1,119 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}
+  Login
+{% endblock %}
+
+<style>
+.row {
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.row > div[class*='col-'] {
+display: flex;
+}
+</style>
+
+
+{% block body %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <img class="card-img-top img-fluid" src="{% static 'images/pep.jpg' %}" alt="Card image cap"style="width:90%; height:450px; max-height:650px; margin:auto;display:block;">
+                <div class="card-block">
+                    <h3 class="card-title">Director of Engagement and Fundraising</h3>
+                    <p class="card-text">Charity People is delighted to be working with a leading health charity to appoint an interim Director of Engagement and Fundraising for a 9-month maternity cover contract.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 2 days ago</small></p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{% static 'images/covid.jpg' %}" alt="Card image cap"style="width:90%; height:450px; max-height:650px; margin:auto;display:block;">
+
+                <div class="card-block">
+                    <h3 class="card-title">Covid Emergency Response</h3>
+                    <p class="card-text">While things are slowly returning back to a new normal for many of us, millions of daily wage earners are still without work. We're continuing to deliver funds, medical and hygiene essentials directly to families stranded in slum communities during this pandemic.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{% static 'images/child.jpg' %}" alt="Card image cap"style="width:90%; height:450px; max-height:650px; margin:auto;display:block;">
+                <div class="card-block">
+                    <h4 class="card-title">Top Child</h4>
+                    <p class="card-text">On average, a child in our sponsorship program spends 4,000 hours in safe, nurturing programs, is at least 50 percent more likely to graduate college.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{% static 'images/water.jpg' %}" alt="Card image cap"style="width:90%; height:450px; max-height:650px; margin:auto;display:block;">
+
+                <div class="card-block">
+                    <h4 class="card-title">Water Charity</h4>
+                    <p class="card-text"> <p class="card-text">charity: water’s mission is to bring clean and safe drinking water to every person in the world. Part of that mission is to deliver the best possible customer experience to every charity: water supporter.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 4 days ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{% static 'images/wheat.jpg' %}" alt="Card image cap"style="width:90%; height:450px; max-height:650px; margin:auto;display:block;">
+
+                <div class="card-block">
+                    <h4 class="card-title">Help Everyone</h4>
+                    <p class="card-text">Charity is connected to generosity, a virtue that, not surprisingly, is central in Islam.  </p>
+                    <p class="card-text"><small class="text-muted">Last updated 4 days ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{% static 'images/dia.jpg' %}" alt="Card image cap"style="width:90%; height:450px; max-height:650px; margin:auto;display:block;">
+
+                <div class="card-block">
+                    <h4 class="card-title">Diabetes Charities</h4>
+                    <p class="card-text">The Diabetes Charities area gives visitors the chance to learn more about individual diabetes charities and what they do.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 4 days ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{% static 'images/coth.jpg' %}" alt="Card image cap"style="width:90%; height:450px; max-height:650px; margin:auto;display:block;">
+
+                <div class="card-block">
+                    <h4 class="card-title">Donate Clothes</h4>
+                    <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    <p class="card-text"><small class="text-muted">Last updated 5 days ago</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+              <img class="card-img-top img-fluid" src="{% static 'images/food.jpg' %}" alt="Card image cap"style="width:90%; height:450px; max-height:650px; margin:auto;display:block;">
+
+                <div class="card-block">
+                    <h4 class="card-title">Food</h4>
+                    <p class="card-text">America’s Charities is an alliance of more than 120 of America's best charities. Our 501(c)(3) high-impact nonprofit members are reviewed annually and must meet specific eligibility criteria before they’re approved for membership.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 5 days ago</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block carousel %}
+{% endblock %}
+
+{% block button %}
+{% endblock %}
+
+{% endblock %}
